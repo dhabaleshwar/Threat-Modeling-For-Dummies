@@ -25,9 +25,7 @@ In threat modeling, we create a threat model by following these steps:
 2. Identify and document as many potential threats to the system as possible.
 3. Document security controls that can be implemented to reduce the likelihood or impact of those threats.
 ```
-Remember, threat modeling should be done by everyone involved in software development, not just security experts. It's important to include threat modeling early in the development process to save resources and address risks effectively.
-
-By understanding potential threats and implementing appropriate controls, we can protect our systems, applications, and user data from harm.
+Threat modeling should be done by everyone involved in software development, not just security experts. It's important to include threat modeling early in the development process to save resources and address risks effectively. By understanding potential threats and implementing appropriate controls, we can protect our systems, applications, and user data from harm.
 # Let's Get Started
 
 
@@ -44,26 +42,24 @@ Example: In the shopping website example, the design would include how users inp
 ## Create Design Documents
 Design documents help document and communicate the application's design. One approach is the 4+1 view model, which provides different perspectives on the system's architecture. The views include:
 
-- Logical View: Describes the application's object model and how it functions from a functional standpoint. It focuses on the system's behavior and relationships between components.
+**- Logical View:** Describes the application's object model and how it functions from a functional standpoint. It focuses on the system's behavior and relationships between components.
 
 Example: In the shopping website, the logical view would outline the different parts of the website, such as the product catalog, shopping cart, and user account management.
 
-- Implementation View: Focuses on the software components and how they are organized in layers or subsystems. It helps programmers understand how to build the application.
+**- Implementation View:** Focuses on the software components and how they are organized in layers or subsystems. It helps programmers understand how to build the application.
 
 Example: The implementation view would show how the different software components, like the front-end interface and the back-end server, work together.
 
-- Process View: Describes the non-functional aspects of the design, such as how the system handles concurrency and synchronization. It helps integrators understand how the different parts of the system interact.
+**- Process View:** Describes the non-functional aspects of the design, such as how the system handles concurrency and synchronization. It helps integrators understand how the different parts of the system interact.
 
 Example: The process view would show how multiple users can interact with the website simultaneously and how the system handles their requests.
 
-- Deployment View: Focuses on the physical infrastructure and shows how the software is deployed on hardware. It helps deployment managers understand how to set up and maintain the system.
+**- Deployment View:** Focuses on the physical infrastructure and shows how the software is deployed on hardware. It helps deployment managers understand how to set up and maintain the system.
 
 Example: The deployment view would show how the website is hosted on servers and how those servers are connected.
 
-- Use-Case View: Describes the central functionality of the system through specific scenarios or use cases. It helps all stakeholders, including end users, understand the system's purpose and features.
+**- Use-Case View:** Describes the central functionality of the system through specific scenarios or use cases. It helps all stakeholders, including end users, understand the system's purpose and features.
 
 Example: The use-case view would outline scenarios like searching for products, adding items to the cart, and completing a purchase.
 
-By creating these design documents, you have a clear understanding of how the application works and can better identify potential threats during the threat modeling process.
-
-Remember, threat modeling is about identifying and addressing potential risks to make the application more secure.
+By using the 4+1 view model , everyone involved in building the software can have a better understanding of how the system works from different perspectives. It helps in communication, identifying potential issues, and making sure the system meets the requirements of users and stakeholders.
