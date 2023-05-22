@@ -1,9 +1,9 @@
 # Introduction
-Threat modeling is a way of identifying and prioritizing potential threats to a system (like a computer program or network) and figuring out how to reduce or neutralize those threats. It helps us understand where the system might be vulnerable and how to protect it.
+Threat modeling is a way of identifying and prioritizing potential threats to a system (like a computer program or network) and figuring out how to reduce or neutralize those threats. It helps us understand where the system might be vulnerable and how to protect it. Think of Threat modeling as playing detective to find potential problems and protect a system, like a computer program or network. 
 
 Here are some important terms to know:
 ```
-1. Threat agent: This refers to the person or group that has the ability to carry out a threat. We need to identify who might want to attack the system, how they would do it, and if they have the capability to do so.
+1. Threat agent: This refers to the person or group that has the ability to carry out a threat. We need to identify who might want to attack the system, how they would do it, and if they have the capability to do so. Think of a threat agent as a "bad guy" who could attack the system. It could be a person or a group with the ability to cause harm.
 
 2. Impact: Impact measures the potential damage caused by a threat. It can include physical damage, financial loss, harm to a company's reputation, or loss of user trust. Some threats may have indirect consequences that need to be considered too.
 
@@ -17,14 +17,14 @@ Now, let's talk about some key concepts:
 ```
 1. Data flow diagram: This is a visual representation of how information flows through a system. It shows where data is input or output, and where it is stored temporarily or permanently.
 
-2. Trust boundary: A trust boundary is a point on the data flow diagram where data changes its level of trust. It's usually where data is passed between different processes or subsystems. For example, when your application reads a file from disk, there's a trust boundary between the application and the file because the file can be modified by external processes or users.
+2. Trust boundary: A trust boundary is a point on the data flow diagram where data changes its level of trust. It's usually where data is passed between different processes or subsystems. Think of it as a "safety line" where we know the data is safe. When data crosses this line, we need to be careful because it could be changed or manipulated by others. For example, when your application reads a file from disk, there's a trust boundary between the application and the file because the file can be modified by external processes or users.
 ```
 In threat modeling, we create a threat model by following these steps:
-
+```
 1. Document how data flows through the system to identify possible attack points.
 2. Identify and document as many potential threats to the system as possible.
 3. Document security controls that can be implemented to reduce the likelihood or impact of those threats.
-
+```
 Remember, threat modeling should be done by everyone involved in software development, not just security experts. It's important to include threat modeling early in the development process to save resources and address risks effectively.
 
 By understanding potential threats and implementing appropriate controls, we can protect our systems, applications, and user data from harm.
