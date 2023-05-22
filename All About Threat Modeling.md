@@ -20,11 +20,11 @@ Now, let's talk about some key concepts:
 2. Trust boundary: A trust boundary is a point on the data flow diagram where data changes its level of trust. It's usually where data is passed between different processes or subsystems. For example, when your application reads a file from disk, there's a trust boundary between the application and the file because the file can be modified by external processes or users.
 ```
 In threat modeling, we create a threat model by following these steps:
-```
+
 1. Document how data flows through the system to identify possible attack points.
 2. Identify and document as many potential threats to the system as possible.
 3. Document security controls that can be implemented to reduce the likelihood or impact of those threats.
-```
+
 Remember, threat modeling should be done by everyone involved in software development, not just security experts. It's important to include threat modeling early in the development process to save resources and address risks effectively.
 
 By understanding potential threats and implementing appropriate controls, we can protect our systems, applications, and user data from harm.
