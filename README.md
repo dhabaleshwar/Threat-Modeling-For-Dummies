@@ -6,13 +6,13 @@ Threat modeling may sound complicated, but fear not! This repository is designed
 
 In this repository, you'll find:
 
-Easy-to-understand explanations: We break down complex concepts into bite-sized pieces and provide clear examples to ensure that you grasp the fundamentals of threat modeling.
+**1- Easy-to-understand explanations:** We break down complex concepts into bite-sized pieces and provide clear examples to ensure that you grasp the fundamentals of threat modeling.
 
-Step-by-step guidance: We'll take you through the process of creating threat models for both existing systems and new projects. You'll learn how to document data flows, identify potential threats, and determine the best security controls to defend against those threats.
+**2- Step-by-step guidance:** We'll take you through the process of creating threat models for both existing systems and new projects. You'll learn how to document data flows, identify potential threats, and determine the best security controls to defend against those threats.
 
-Practical illustrations: Visual aids, including data flow diagrams and examples, will help you visualize how threats can impact different parts of a system and understand where protective measures are needed.
+**3- Practical illustrations:** Visual aids, including data flow diagrams and examples, will help you visualize how threats can impact different parts of a system and understand where protective measures are needed.
 
-Beginner-friendly terminology: We explain key terms in simple language, avoiding jargon and technicalities. You'll quickly become familiar with concepts such as threat agents, impact, likelihood, controls, data flow diagrams, and trust boundaries.
+**4- Beginner-friendly terminology:** We explain key terms in simple language, avoiding jargon and technicalities. You'll quickly become familiar with concepts such as threat agents, impact, likelihood, controls, data flow diagrams, and trust boundaries.
 
 Remember, you don't need to be a cybersecurity expert to get started with threat modeling. This guide is designed for beginners, and we encourage everyone involved in software development or system design to embrace threat modeling as an essential practice.
 
