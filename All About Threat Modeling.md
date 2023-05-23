@@ -253,3 +253,46 @@ Lateral Movement – Expanding control over the target network beyond the initia
 
 By considering these types of threats, developers and security experts can identify potential vulnerabilities and take appropriate measures to protect against them. The goal is to understand how these threats can impact a system's security and then implement countermeasures to prevent or mitigate them.
 
+
+## Rank Risks 
+Create a risk matrix to rank risks based on severity. Assign a risk value to each risk based on Means, Motive, and Opportunity. Use a predefined risk matrix table to categorize risks into different risk levels, such as Notice, Low, Medium, or High.
+
+## Determine countermeasures and mitigation
+Identify the individuals responsible for mitigating each risk, known as risk owners. Collaborate with risk owners and stakeholders to agree on risk mitigation strategies. Implement necessary controls, such as code upgrades or configuration updates, to reduce risks to an acceptable level.
+
+## Identify risk owners
+The assessors (those evaluating the risks) should identify risk owners who are responsible for implementing risk mitigation. This can be members of the information security team or the development team. Designers or architects should assign risk mitigation to the development team during application development.
+
+## Agree on risk mitigation with risk owners and stakeholders
+Review the proposed mitigation controls with risk owners. Some controls may not be applicable, so alternative controls or compensatory measures should be considered. Seek agreement on the final risk mitigation approach.
+
+## Build your risk treatment strategy: Determine how to handle the identified risks
+   - Reduce: Implement controls such as code upgrades or specific configurations to minimize the risk within the application.
+   - Transfer: Outsource specific components or deployment to a third party that can handle the associated risks.
+   - Avoid: Disable certain functions or features in the application that pose risks.
+   - Accept: If the risk falls within acceptable criteria, the risk owner can choose to accept it.
+
+## Select appropriate controls to mitigate the risk
+Choose the appropriate controls identified in the risk treatment strategy. These controls can include code upgrades, configuration changes, or other measures to reduce the identified risks.
+
+## Test risk treatment to verify remediation
+Apply the selected mitigation controls and measure the impact on the risk. Verify that the risk value has been reduced to an acceptable level based on the predefined criteria.
+
+## Reduce risk in the risk log for verified treated risk
+Update the risk log to reflect the reduction in risk after implementing the mitigation controls and verifying their effectiveness.
+
+## Periodically retest risk
+Threat modeling is an ongoing process. Periodically reevaluate the identified risks, considering any changes to the application or the threat landscape. Retest the implemented risk treatments to ensure their continued effectiveness.
+
+## Conclusion
+In conclusion, threat modeling is a crucial process in ensuring the security and resilience of applications and systems. By systematically identifying and assessing potential threats, organizations can proactively implement appropriate controls and countermeasures to mitigate risks.
+
+Throughout the threat modeling process, various steps are followed, including defining and evaluating assets, considering data protection in transit and at rest, creating information flow diagrams, and mapping threat agents to application entry points. These steps help in visualizing the attack surface, identifying vulnerabilities, and understanding the potential impact of threats.
+
+Additionally, risk methodologies such as STRIDE, DREAD, and PASTA provide frameworks for analyzing risks, prioritizing them, and determining suitable mitigation strategies. By ranking risks, involving risk owners and stakeholders, and selecting appropriate controls, organizations can effectively reduce the likelihood and impact of potential attacks.
+
+Threat modeling is not a one-time activity; it requires periodic reevaluation and testing to adapt to evolving threats and changes in the application or system. Regularly reviewing and updating the threat model ensures its continued effectiveness in safeguarding against emerging risks.
+
+In a constantly evolving threat landscape, threat modeling empowers organizations to take a proactive approach to security, enabling them to identify and address vulnerabilities before they can be exploited. By integrating threat modeling into the development and design processes, organizations can build robust and resilient systems that protect sensitive data, maintain the trust of users, and mitigate the potential impact of security incidents.
+
+Overall, threat modeling serves as a valuable tool for enhancing the security posture of applications and systems, helping organizations stay one step ahead of potential threats and ensuring the confidentiality, integrity, and availability of their critical assets.
