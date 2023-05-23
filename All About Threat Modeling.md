@@ -140,3 +140,116 @@ Application entry points are the interfaces or channels through which potential 
 
 Example: For a web-based application, entry points could include web forms, login screens, or API endpoints. Attackers may attempt to exploit vulnerabilities in these entry points to gain unauthorized access or inject malicious code.
 
+## Identify Threat Agents
+Threat agents are individuals, groups, or entities that pose a threat to the system or organization. It is important to identify all possible threat agents that could exist within the system and understand their means, motives, and opportunities to carry out attacks. This helps in associating threat agents with specific system components they can directly interact with.
+
+Example: Threat agents can include hackers, malicious insiders, organized crime groups, or nation-state actors. For instance, a hacker may have the means (technical skills), motive (financial gain or revenge), and opportunity (weak security controls) to launch a cyber attack against a company's website.
+
+## Minimize the number of threat agents
+To simplify threat modeling, it is useful to treat similar threat agents as equivalent classes. This reduces the complexity of assessing threats and allows for more efficient analysis. Additionally, considering the motivation of the attackers can help evaluate the likelihood of specific threats occurring.
+
+Example: Instead of individually analyzing every hacker or insider threat, grouping them into categories such as "external hackers" or "privileged insiders" can streamline the threat assessment process. By understanding the motivations behind these threat agents, such as financial gain or espionage, it becomes easier to prioritize potential threats.
+
+## Consider insider threats
+Insider threats refer to risks posed by individuals who have authorized access to an organization's systems or information. These individuals may intentionally or unintentionally cause harm to the organization's assets.
+
+Example: An employee with legitimate access to sensitive customer data may misuse that access to steal personal information or sell it to third parties. Such insider threats can be challenging to detect because the individuals already have authorized access, making it important to implement appropriate controls and monitoring mechanisms.
+
+## Map threat agents to application entry points
+Mapping threat agents to application entry points involves identifying which entry points, such as login processes or registration forms, could be targeted by specific threat agents.
+
+Example: A threat agent like an external hacker may target the login process of an e-commerce website to gain unauthorized access to user accounts. By mapping this threat agent to the specific entry point, the focus can be placed on securing the login mechanism and implementing measures like multi-factor authentication or account lockouts to mitigate the risk.
+
+## Draw attack vectors and attacks tree
+Creating attack vectors and attacks tree diagrams helps visualize potential attack paths and understand how an attacker could exploit vulnerabilities in the system.
+
+Example: An attack vector could involve a hacker exploiting a web application vulnerability, gaining unauthorized access to the application's database, and extracting sensitive customer information. Understanding such attack vectors allows security teams to prioritize vulnerability remediation efforts and implement proper security controls at each step.
+
+## Mapping abuse cases to use cases
+Mapping abuse cases to use cases involves identifying potential threats or malicious actions that can occur within each intended use case of the application. This helps identify application logical threats.
+
+Example: In an online banking system, abuse cases could include actions like tampering with transaction amounts, bypassing authorization checks, or manipulating account balances. By mapping these abuse cases to use cases, vulnerabilities can be identified and appropriate security measures can be implemented.
+
+## Re-define attack vectors
+After defining attack vectors, it is important to consider the potential consequences of a compromised user role and re-define the attack vectors accordingly. This accounts for the cascading effects of an initial compromise.
+
+Example: If an attacker gains access to an administrative user account in a system, they may have additional privileges to perform actions that can lead to further attacks. These attack vectors need to be re-defined to address the expanded capabilities of the compromised account.
+
+## Write your Threat traceability matrix
+A threat traceability matrix helps document the identified threats and their associated risks. It provides a structured overview of the threats, allowing for better risk management and mitigation planning.
+
+Example: The matrix would include a list of identified threats, their potential impact on the system or organization, and the probability of occurrence. It helps prioritize and allocate resources to address the most critical threats.
+
+## Define the Impact and Probability for each threat
+Determining the impact and probability of each threat involves assessing the potential consequences and the likelihood of the threat materializing. This helps in understanding the overall risk level associated with each threat.
+
+Example: For a threat like a Distributed Denial of Service (DDoS) attack on a website, the impact could be significant service disruption and loss of revenue, while the probability may vary based on factors like the website's visibility and the prevalence of DDoS attacks in the industry.
+
+## Use risk management methodology
+Risk management methodologies, such as DREAD and PASTA, provide frameworks for evaluating and addressing risks associated with identified threats. These methodologies help prioritize risks and allocate appropriate resources for mitigation.
+
+Example:
+
+- DREAD: DREAD is a method that assigns risk values based on factors like the potential damage, reproducibility, exploitability, affected users, and discoverability of a vulnerability. The calculated risk value helps determine the risk level.
+
+- PASTA: PASTA is a risk-centric methodology that focuses on application threat modeling. It emphasizes early evaluation of the impact of threats and vulnerabilities. The methodology aims to apply security countermeasures based on the potential impact that could be sustained from defined threat models, vulnerabilities, weaknesses, and attack patterns.
+
+- STRIDE: STRIDE is a framework used in threat modeling to identify and analyze potential threats to a system or application. It helps developers and security professionals think about different types of threats that can occur. The components include spoofing, tampering, repudiation, information disclosure, denial of service, elevation of privilege.
+
+Now let's learn each of them in detail.
+## DREAD
+DREAD is a risk assessment methodology that helps evaluate vulnerabilities by using a mathematical formula to calculate the corresponding risk. It considers five main categories: Damage, Reproducibility, Exploitability, Affected users, and Discoverability.
+
+Damage: It assesses the potential impact or harm that an attack exploiting the vulnerability can cause. The higher the potential damage, the greater the risk.
+
+Reproducibility: It evaluates how easy it is to reproduce the attack. If an attack can be easily replicated, the risk increases.
+
+Exploitability: It measures the effort required to launch the attack. The higher the effort, the lower the risk.
+
+Affected users: It considers the number of users or systems that would be impacted by the attack. More affected users indicate a higher risk level.
+
+Discoverability: It assesses how easy it is to discover the vulnerability. If it is easily detectable, the risk may be lower.
+
+The DREAD formula calculates the risk value as follows:
+Risk Value = (Damage + Affected users) x (Reproducibility + Exploitability + Discoverability).
+
+Based on the calculated risk value, organizations can determine the risk level and prioritize their mitigation efforts.
+## PASTA
+PASTA (Process for Attack Simulation and Threat Analysis) is a comprehensive methodology for application threat modeling. It focuses on evaluating risks and applying appropriate security countermeasures based on the possible impact that could result from defined threat models, vulnerabilities, weaknesses, and attack patterns.
+
+In PASTA, impact analysis is performed early in the analysis phase, before evaluating the risk. This is done to ensure that the consequences of potential failures in the product or use cases are properly understood by the stakeholders.
+
+PASTA follows a risk-centric approach and includes the following steps:
+
+Identifying threats: Identifying potential threats that the application might face.
+
+Evaluating impact: Assessing the impact of threats on the system or organization.
+
+Analyzing risks: Evaluating the risk level for each identified threat based on impact and other factors.
+
+Applying countermeasures: Implementing security countermeasures that are commensurate with the identified risks.
+
+PASTA emphasizes contextual evaluation of threat impacts, considering the probability and effectiveness of countermeasures in the specific scenario. It provides a structured methodology for assessing and addressing risks in application security.
+
+By following PASTA, organizations can gain a better understanding of the risks associated with their applications and make informed decisions about implementing appropriate security measures.
+## STRIDE-LM
+STRIDE is a framework used in threat modeling to identify and analyze potential threats to a system or application. It helps developers and security professionals think about different types of threats that can occur. Here's a simple explanation of each component of STRIDE:
+
+- Spoofing: This is when someone pretends to be someone else to gain unauthorized access. It's like someone wearing a disguise to fool others into thinking they are someone they're not.
+
+- Tampering: Tampering refers to unauthorized changes or modifications to data or systems. It's like someone secretly altering the contents of a document without anyone noticing.
+
+- Repudiation: Repudiation is when someone denies doing something that they actually did. It's like a person claiming they didn't send an email when there is evidence that they did.
+
+- Information disclosure: Information disclosure occurs when sensitive or confidential information is revealed to unauthorized individuals. It's like accidentally sharing your password with someone who shouldn't have access to it.
+
+- Denial of Service (DoS): Denial of Service attacks aim to make a system or network unavailable to its intended users. It's like someone overwhelming a phone line with so many calls that nobody else can get through.
+
+- Elevation of privilege: Elevation of privilege involves gaining unauthorized access to higher levels of privilege or permissions. It's like a regular user suddenly obtaining administrative rights and being able to control everything.
+
+Practitioners at Lockheed Martin noted that STRIDE was developed primarily to address engineering and development projects, rather than network defense. To make the model more applicable to the latter, they added a seventh classification:
+
+Lateral Movement – Expanding control over the target network beyond the initial point of compromise.
+
+By considering these types of threats, developers and security experts can identify potential vulnerabilities and take appropriate measures to protect against them. The goal is to understand how these threats can impact a system's security and then implement countermeasures to prevent or mitigate them.
+
