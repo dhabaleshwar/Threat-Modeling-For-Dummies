@@ -63,3 +63,21 @@ Example: The deployment view would show how the website is hosted on servers and
 Example: The use-case view would outline scenarios like searching for products, adding items to the cart, and completing a purchase.
 
 By using the 4+1 view model , everyone involved in building the software can have a better understanding of how the system works from different perspectives. It helps in communication, identifying potential issues, and making sure the system meets the requirements of users and stakeholders.
+## Decomposing and Modeling The System
+To perform threat modeling, it's important to understand how a system works and how it interacts with its surroundings. Here are some steps to help you decompose and model the system:
+
+1- Start by creating a high-level diagram that shows the flow of information in the system. Identify the different parts of the system, like applications or modules, and how they connect with each other.
+
+2- Identify the trusted boundaries of the system. These are the points where the system interacts with external entities. For example, if you're looking at a website, the trusted boundary could be where the website interacts with user input.
+
+3- Add actors to the diagram. Actors can be both internal and external entities that interact with the system. Internal actors could be users or administrators, while external actors could be attackers or other systems.
+
+4- Define internal trusted boundaries within the system. These are the different security zones or compartments that have been designed to protect certain parts of the system.
+
+5- Review the actors you identified earlier to make sure they align with the trusted boundaries and the overall system design.
+
+6- Add information flows to the diagram. These represent how data or information moves between different parts of the system. For example, it could be the flow of user input from a web form to a database.
+
+7- Identify the information elements and classify them based on your information classification policy. This means categorizing the information based on its sensitivity or importance. For example, personal user data may be classified as highly sensitive.
+
+8- Where possible, add assets to the identified information flows. Assets are the valuable resources that need protection, such as databases, servers, or intellectual property. This helps you identify what needs to be safeguarded.
